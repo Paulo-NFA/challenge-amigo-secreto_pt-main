@@ -28,10 +28,12 @@ function mostrarLista() {
     // limpar a lista existente --> para não ter duplicados
     lista.innerHTML = "";
 
-    for (let i = 0; i < amigos.length; i++) {
-       let itemLista = document.createElement('li');
+    let i = 0;
+    while (i < amigos.length) {
+        let itemLista = document.createElement('li');
         itemLista.textContent = amigos[i];
         lista.appendChild(itemLista);
+        i++;
     }
 }
 
